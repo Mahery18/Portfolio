@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .hover-section {
+      transition: transform 0.5s, box-shadow 0.5s;
+    }
+    .hover-section:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 20px rgba(0, 255, 200, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <header class="bg-gray-800 fixed w-full top-0 z-50">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Mahery Ifaliana RASOLOFOMANANA</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="hover:text-cyan-400">A propos</a></li>
+        <li><a href="#skills" class="hover:text-cyan-400">Compétences</a></li>
+        <li><a href="#education" class="hover:text-cyan-400">Formations</a></li>
+        <li><a href="#projects" class="hover:text-cyan-400">Projets</a></li>
+        <li><a href="#contact" class="hover:text-cyan-400">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pt-24 space-y-24 max-w-4xl mx-auto px-4">
+    <section id="about" class="animate-fade-in">
+      <h2 class="text-3xl font-bold mb-4">À propos de moi</h2>
+      <p>Étudiant motivé et sérieux, avec de solides bases en développement, et bases de données. À l’aise avec differents outils de développement. Curieux, autonome et assidu, je m’investis pleinement dans chaque mission confiée, avec un fort intérêt pour l’apprentissage continu. </p>
+
+      <!-- Bouton pour voir et télécharger le CV -->
+      <div class="mt-6">
+        <a href="CV_Mahery.pdf" target="_blank" download class="inline-block bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-2 px-4 rounded transition">
+          Voir / Télécharger mon CV
+        </a>
+      </div>
+    </section>
+
+    <section id="skills" class="animate-fade-in hover-section">
+      <h2 class="text-3xl font-bold mb-8">Compétences</h2>
+      <div class="space-y-6">
+        <div class="flex items-center justify-between">
+          <span>HTML</span>
+          <span class="text-cyan-400">90%</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-4 overflow-hidden">
+          <div class="bg-green-400 h-4 transition-all duration-1000 ease-in-out" style="width: 0%" data-percent="90"></div>
+        </div>
+
+        <div class="flex items-center justify-between">
+          <span>CSS</span>
+          <span class="text-cyan-400">85%</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-4 overflow-hidden">
+          <div class="bg-green-400 h-4 transition-all duration-1000 ease-in-out" style="width: 0%" data-percent="85"></div>
+        </div>
+
+        <div class="flex items-center justify-between">
+          <span>JavaScript</span>
+          <span class="text-cyan-400">80%</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-4 overflow-hidden">
+          <div class="bg-green-400 h-4 transition-all duration-1000 ease-in-out" style="width: 0%" data-percent="80"></div>
+        </div>
+
+        <div class="flex items-center justify-between">
+          <span>Python</span>
+          <span class="text-cyan-400">75%</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-4 overflow-hidden">
+          <div class="bg-green-400 h-4 transition-all duration-1000 ease-in-out" style="width: 0%" data-percent="75"></div>
+        </div>
+      </div></br>
+
+       <div class="flex items-center justify-between">
+          <span>PHP</span>
+          <span class="text-cyan-400">85%</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-4 overflow-hidden">
+          <div class="bg-green-400 h-4 transition-all duration-1000 ease-in-out" style="width: 0%" data-percent="85"></div>
+        </div>
+      </div> </br>
+
+       <div class="flex items-center justify-between">
+          <span>Mysql</span>
+          <span class="text-cyan-400">90%</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-4 overflow-hidden">
+          <div class="bg-green-400 h-4 transition-all duration-1000 ease-in-out" style="width: 0%" data-percent="90"></div>
+        </div>
+      </div> </br>
+
+       <div class="flex items-center justify-between">
+          <span>Adobe AE</span>
+          <span class="text-cyan-400">95%</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-4 overflow-hidden">
+          <div class="bg-green-400 h-4 transition-all duration-1000 ease-in-out" style="width: 0%" data-percent="95"></div>
+        </div>
+      </div> </br>
+
+    </section>
+
+    <section id="education" class="animate-fade-in hover-section">
+      <h2 class="text-3xl font-bold mb-8 text-center">Formations</h2>
+      <div class="relative border-l-4 border-green-400 ml-6 space-y-10">
+        <div class="ml-6 relative">
+          <div class="absolute -left-6 top-1 w-4 h-4 bg-green-400 rounded-full"></div>
+          <span class="text-green-400 font-semibold">2024-2026</span>
+          <h3 class="text-xl font-bold">MCCI Business School</h3>
+          <p class="text-gray-300">BTS en Service Informatique aux organisations (Maurice)</p>
+        </div>
+        <div class="ml-6 relative">
+          <div class="absolute -left-6 top-1 w-4 h-4 bg-green-400 rounded-full"></div>
+          <span class="text-green-400 font-semibold">2018-2019</span>
+          <h3 class="text-xl font-bold">G2ACAMAS</h3>
+          <p class="text-gray-300">Cabin crew training (Maurice)</p>
+        </div>
+        <div class="ml-6 relative">
+          <div class="absolute -left-6 top-1 w-4 h-4 bg-green-400 rounded-full"></div>
+          <span class="text-green-400 font-semibold">2017-2018</span>
+          <h3 class="text-xl font-bold">English Teaching Program</h3>
+          <p class="text-gray-300">Cours d’anglais (Antananarivo)</p>
+        </div>
+        <div class="ml-6 relative">
+          <div class="absolute -left-6 top-1 w-4 h-4 bg-green-400 rounded-full"></div>
+          <span class="text-green-400 font-semibold">2016-2017</span>
+          <h3 class="text-xl font-bold">Etablissement Scolaire La Columba</h3>
+          <p class="text-gray-300">Baccalauréat (Antananarivo)</p>
+        </div>
+      </div>
+    </section>
+
+<section id="projects" class="animate-fade-in bg-gray-900">
+  <h2 class="text-4xl font-bold mb-12 text-center">Projets</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+    <a href="http://localhost:8888/SuperCar/accueilprincipal.php" class="block bg-gray-800 p-8 rounded-lg shadow-lg hover:scale-105 transition-transform" target="_self" rel="noopener noreferrer">
+      <h3 class="text-2xl font-semibold mb-6">SuperCar</h3>
+      <p class="mb-8">Un site web dynamique pour vente de voitures</p>
+      <img src="/Users/mac/Documents/Dossiers perso/fond.png" alt="Accueil Principal" class="rounded w-full object-cover h-80" />
+    </a>
+  </div>
+</section>
+
+  <div class="flex flex-col md:flex-row md:space-x-12">
+    <!-- Section Contact -->
+    <section id="contact" class="animate-fade-in flex-1">
+      <h2 class="text-3xl font-bold mb-4">Contact</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Nom" class="w-full p-2 rounded bg-gray-700 text-white" required>
+        <input type="email" placeholder="Email" class="w-full p-2 rounded bg-gray-700 text-white" required>
+        <textarea placeholder="Message" class="w-full p-2 rounded bg-gray-700 text-white" rows="4" required></textarea>
+        <button type="submit" class="bg-cyan-500 hover:bg-cyan-600 px-4 py-2 rounded text-white">Envoyer</button>
+      </form>
+    </section>
+
+    <!-- Nouvelle section infos contact -->
+    <section id="contact-info" class="animate-fade-in flex-1 mt-12 md:mt-0">
+      <h2 class="text-3xl font-bold mb-4">Informations</h2>
+      <ul class="text-lg space-y-3 text-gray-300">
+        <li><strong>Téléphone :</strong> +230 54 86 67 72</li>
+        <li><strong>Email :</strong> mccibs24152@student.mccibs.ac.mu</li>
+      </ul>
+    </section>
+  </div>
+  </main>
+
+
+
+
+
+  <script>
+    const sections = document.querySelectorAll('.animate-fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('opacity-100', 'translate-y-0');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    sections.forEach(section => {
+      section.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+      observer.observe(section);
+    });
+
+    const skillObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const bars = entry.target.querySelectorAll('[data-percent]');
+          bars.forEach(bar => {
+            const percent = bar.getAttribute('data-percent');
+            bar.style.width = percent + '%';
+          });
+        }
+      });
+    }, {
+      threshold: 0.5
+    });
+
+    const skillsSection = document.querySelector('#skills');
+    skillObserver.observe(skillsSection);
+  </script>
+</body>
+</html>
