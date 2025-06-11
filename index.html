@@ -40,7 +40,7 @@
       <!-- Bouton pour voir et télécharger le CV -->
       <div class="mt-6">
         <a href="CV_Mahery.pdf" target="_blank" download class="inline-block bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-2 px-4 rounded transition">
-          Télécharger mon CV
+          Voir / Télécharger mon CV
         </a>
       </div>
     </section>
@@ -140,16 +140,69 @@
       </div>
     </section>
 
+   
 <section id="projects" class="animate-fade-in bg-gray-900">
-  <h2 class="text-4xl font-bold mb-12 text-center">Projets</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-    <a href="http://localhost:8888/SuperCar/accueilprincipal.php" class="block bg-gray-800 p-8 rounded-lg shadow-lg hover:scale-105 transition-transform" target="_self" rel="noopener noreferrer">
-      <h3 class="text-2xl font-semibold mb-6">SuperCar</h3>
-      <p class="mb-8">Un site web dynamique pour vente de voitures</p>
-      <img src="fond.png" alt="Accueil Principal" class="rounded w-full object-cover h-80" />
-    </a>
+  <h2 class="text-4xl font-bold mb-12 text-center">Projet SuperCar</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- Image 1 -->
+    <div class="bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer" onclick="openLightbox('capture1.png')">
+      <img src="capture1.png" alt="Capture 1" class="rounded w-full object-cover h-48 mb-2" />
+      <p class="text-center text-sm text-gray-300">Page d'accueil</p>
+    </div>
+
+    <!-- Image 2 -->
+    <div class="bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer" onclick="openLightbox('capture2.png')">
+      <img src="capture2.png" alt="Capture 2" class="rounded w-full object-cover h-48 mb-2" />
+      <p class="text-center text-sm text-gray-300">Présentation</p>
+    </div>
+
+    <!-- Image 3 -->
+    <div class="bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer" onclick="openLightbox('capture3.png')">
+      <img src="capture3.png" alt="Capture 3" class="rounded w-full object-cover h-48 mb-2" />
+      <p class="text-center text-sm text-gray-300">Marques</p>
+    </div>
+
+    <!-- Image 4 -->
+    <div class="bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer" onclick="openLightbox('capture4.png')">
+      <img src="capture4.png" alt="Capture 4" class="rounded w-full object-cover h-48 mb-2" />
+      <p class="text-center text-sm text-gray-300">Voiture 1ère partie</p>
+    </div>
+
+    <!-- Image 5 -->
+    <div class="bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer" onclick="openLightbox('capture5.png')">
+      <img src="capture5.png" alt="Capture 5" class="rounded w-full object-cover h-48 mb-2" />
+      <p class="text-center text-sm text-gray-300">Voiture 2ème partie</p>
+    </div>
+
+    <!-- Image 6 -->
+    <div class="bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer" onclick="openLightbox('capture6.png')">
+      <img src="capture6.png" alt="Capture 6" class="rounded w-full object-cover h-48 mb-2" />
+      <p class="text-center text-sm text-gray-300">Demande d'essai</p>
+    </div>
+
+    <!-- Image 7 -->
+    <div class="bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer" onclick="openLightbox('capture7.png')">
+      <img src="capture7.png" alt="Capture 7" class="rounded w-full object-cover h-48 mb-2" />
+      <p class="text-center text-sm text-gray-300">Evènements</p>
+    </div>
+
+    <!-- Image 8 -->
+    <div class="bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer" onclick="openLightbox('capture8.png')">
+      <img src="capture8.png" alt="Capture 8" class="rounded w-full object-cover h-48 mb-2" />
+      <p class="text-center text-sm text-gray-300">Contact</p>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 hidden justify-center items-center z-50">
+    <span class="absolute top-4 right-6 text-black text-4xl cursor-pointer bg-white px-2 rounded" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" src="" class="max-w-full max-h-screen rounded shadow-lg" />
   </div>
 </section>
+
+
+
 
   <div class="flex flex-col md:flex-row md:space-x-12">
     <!-- Section Contact -->
@@ -168,7 +221,7 @@
       <h2 class="text-3xl font-bold mb-4">Informations</h2>
       <ul class="text-lg space-y-3 text-gray-300">
         <li><strong>Téléphone :</strong> +230 54 86 67 72</li>
-        <li><strong>Email :</strong> mccibs24152@student.mccibs.ac.mu</li>
+        <li><strong>Email :</strong> maheryifalianaras@gmail.com</li>
       </ul>
     </section>
   </div>
@@ -212,5 +265,24 @@
     const skillsSection = document.querySelector('#skills');
     skillObserver.observe(skillsSection);
   </script>
+  <script>
+  function openLightbox(src) {
+    const img = document.getElementById('lightbox-img');
+    img.src = src;
+    document.getElementById('lightbox').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.add('hidden');
+    document.getElementById('lightbox-img').src = '';
+    document.body.style.overflow = '';
+  }
+</script>
+
+</body>
+</html>
+
+
 </body>
 </html>
