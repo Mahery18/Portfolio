@@ -150,20 +150,18 @@
 
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-    <!-- Projet 1 : toutes les captures -->
-    <div class="bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer">
-      <h3 class="text-center text-lg font-semibold text-gray-200 mb-4">SuperCar</h3>
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
-        <img src="capture1.png" alt="Page d'accueil" class="rounded w-full object-cover h-32" onclick="openLightbox('capture1.png')" />
-        <img src="capture2.png" alt="Présentation" class="rounded w-full object-cover h-32" onclick="openLightbox('capture2.png')" />
-        <img src="capture3.png" alt="Marques" class="rounded w-full object-cover h-32" onclick="openLightbox('capture3.png')" />
-        <img src="capture4.png" alt="Voiture 1ère partie" class="rounded w-full object-cover h-32" onclick="openLightbox('capture4.png')" />
-        <img src="capture5.png" alt="Voiture 2ème partie" class="rounded w-full object-cover h-32" onclick="openLightbox('capture5.png')" />
-        <img src="capture6.png" alt="Demande d'essai" class="rounded w-full object-cover h-32" onclick="openLightbox('capture6.png')" />
-        <img src="capture7.png" alt="Evènements" class="rounded w-full object-cover h-32" onclick="openLightbox('capture7.png')" />
-        <img src="capture8.png" alt="Contact" class="rounded w-full object-cover h-32" onclick="openLightbox('capture8.png')" />
-      </div>
-    </div>
+
+<!-- Projet SuperCar -->
+<a href="http://localhost/SuperCar/accueilprincipal.php" target="_blank" class="block w-64 h-40 bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+  <!-- Image de couverture -->
+  <img src="/Applications/MAMP/htdocs/SuperCar/phodéos/fondaccueil.webp" alt="SuperCar" class="w-full h-full object-cover">
+
+  <!-- Optionnel : overlay avec titre -->
+  <div class="absolute inset-0 bg-cyan-400/20 flex items-end justify-center p-2 opacity-0 hover:opacity-100 transition">
+    <h3 class="text-white font-bold text-lg">SuperCar</h3>
+  </div>
+</a>
+
 
     <!-- Projet 2 vide -->
     <div class="bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer">
